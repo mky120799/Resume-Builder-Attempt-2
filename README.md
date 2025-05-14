@@ -1,138 +1,109 @@
-# Resume-Builder (AlmaBetter Capstone Project)
+# 📄 Resume Builder - AlmaBetter Capstone Project
 
+A user-friendly web application that allows anyone to create professional resumes quickly using customizable templates.
 
-## Introduction
-* Resume builder is a web application where anyone can create a resume with ease and choose from different available templates.
-* It has three tabs: 1) Resume Templates (Home Page), 2)Resumes (Saved Resumes) 3) About us 
-* Set profile picture in the resume.
-* Before downloading we have a preview option to view your resume.
-* You can save resumes to the local hard drive.
-* Saved resumes can be deleted as well as modified by the user.
+## 🚀 Features
 
-## Used in this project:
-* React-Router-Dom
-* Material UI
-* React-Redux
-* Store
-* React-Avatar-edit
-* Vanilla JS
-* JSX
-* Uniq ID
-* React-Hook-Forms
-* Jspdf converter
-* Redux connect method
-* Images
-* Raw data
+- Choose from a variety of professionally designed **resume templates**
+- Fill in your **personal, education, and work experience** details
+- **Preview** your resume before downloading
+- **Set a profile picture** directly in your resume
+- **Save** resumes locally and **edit/delete** them anytime
+- Seamless navigation through **three main pages**:
+  1. Resume Templates (Home)
+  2. My Resumes
+  3. About Us
 
-## Pages
-* Home (Resume Templates) <br/> -Choose one from the available templates &amp; <br/> -Navigated to details filling page 
-* My Resumes
-* About us
+## 🛠️ Technologies Used
 
-## Demo about the pages:
--  *Home Page*
-<img width="1120" alt="image" src="https://user-images.githubusercontent.com/100461901/219924028-fb00b130-a794-4c2f-aa43-91feaab95441.png">
+- React
+- React Router DOM
+- React Redux & Redux Connect
+- Material UI
+- React Hook Forms
+- React Avatar Edit
+- Vanilla JavaScript
+- JSX
+- jsPDF Converter
+- Unique ID Generator
+- Custom Assets & Raw Data
 
-- *Details Filling page*
-<img width="1117" alt="image" src="https://user-images.githubusercontent.com/100461901/219924410-c768a081-9ac8-4cf8-83ed-8b6cc00d0d1f.png">
+## 📄 Pages Overview
 
-- *My Resumes*
-<img width="1120" alt="image" src="https://user-images.githubusercontent.com/100461901/219924722-595fdb82-6037-42b2-8639-44541213b01f.png">
+### 🏠 Home (Resume Templates)
+- Choose a template
+- Navigate to the Details Filling page
 
-- *About us*
-<img width="1119" alt="image" src="https://user-images.githubusercontent.com/100461901/219925057-16f85fe1-6aa1-416f-9d88-6040e04faae0.png">
+![Home Page](https://user-images.githubusercontent.com/100461901/219924028-fb00b130-a794-4c2f-aa43-91feaab95441.png)
 
-*__Live Link__* <br/>
-<b>Click [Here](https://resume-builder-attempt-2.vercel.app/)</b>
+### 📝 Details Filling Page
+- Enter your personal, educational, and professional details
 
-</hr>
+![Details Filling](https://user-images.githubusercontent.com/100461901/219924410-c768a081-9ac8-4cf8-83ed-8b6cc00d0d1f.png)
+
+### 📂 My Resumes
+- View, edit, delete or download saved resumes
+
+![My Resumes](https://user-images.githubusercontent.com/100461901/219924722-595fdb82-6037-42b2-8639-44541213b01f.png)
+
+### ℹ️ About Us
+- Learn more about the app and its creators
+
+![About Us](https://user-images.githubusercontent.com/100461901/219925057-16f85fe1-6aa1-416f-9d88-6040e04faae0.png)
+
+## 🌐 Live Demo
+
+🔗 [Click Here to View the App](https://resume-builder-attempt-2.vercel.app/)
+
+---
+
+## 📁 Project Structure
 
 Resume-Builder/
 ├── public/
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── manifest.json
-│   └── robots.txt
-│
+│ ├── favicon.ico
+│ ├── index.html
+│ ├── manifest.json
+│ └── robots.txt
 ├── src/
-│   ├── assets/
-│   │   ├── images/
-│   │   │   ├── aboutCV.jpg
-│   │   │   ├── sample_1.jpg
-│   │   │   ├── sample_2.jpg
-│   │   │   ├── sample_3.jpg
-│   │   │   └── sample_4.jpg
-│   │   └── styles/
-│   │       ├── global.css
-│   │       └── variables.css
-│   │
-│   ├── components/
-│   │   ├── common/
-│   │   │   ├── Button/
-│   │   │   │   ├── Button.js
-│   │   │   │   └── Button.css
-│   │   │   ├── Navbar/
-│   │   │   │   ├── Navbar.js
-│   │   │   │   └── Navbar.css
-│   │   │   └── Footer/
-│   │   │       ├── Footer.js
-│   │   │       └── Footer.css
-│   │   │
-│   │   ├── forms/
-│   │   │   ├── PersonalInfoForm.js
-│   │   │   ├── EducationForm.js
-│   │   │   └── WorkExperienceForm.js
-│   │   │
-│   │   ├── templates/
-│   │   │   ├── Template1.js
-│   │   │   ├── Template2.js
-│   │   │   ├── Template3.js
-│   │   │   ├── Template4.js
-│   │   │   ├── Template5.js
-│   │   │   └── Template6.js
-│   │
-│   ├── pages/
-│   │   ├── Home/
-│   │   │   ├── Home.js
-│   │   │   └── Home.css
-│   │   ├── AboutUs/
-│   │   │   ├── AboutUs.js
-│   │   │   └── AboutUs.css
-│   │   ├── MyResumes/
-│   │   │   ├── MyResumes.js
-│   │   │   └── MyResumes.css
-│   │   └── DetailsFilling/
-│   │       ├── DetailsFilling.js
-│   │       └── DetailsFilling.css
-│   │
-│   ├── redux/
-│   │   ├── actions/
-│   │   │   └── actions.js
-│   │   ├── reducers/
-│   │   │   ├── combinedReducers.js
-│   │   │   └── reducers.js
-│   │   └── store.js
-│   │
-│   ├── utils/
-│   │   ├── inputChecks.js
-│   │   ├── data/
-│   │   │   ├── data.js
-│   │   │   └── templates.js
-│   │   └── helpers.js
-│   │
-│   ├── App.js
-│   ├── index.js
-│   └── index.css
-│
+│ ├── assets/
+│ │ ├── images/
+│ │ └── styles/
+│ ├── components/
+│ │ ├── common/
+│ │ ├── forms/
+│ │ └── templates/
+│ ├── pages/
+│ │ ├── Home/
+│ │ ├── AboutUs/
+│ │ ├── MyResumes/
+│ │ └── DetailsFilling/
+│ ├── redux/
+│ │ ├── actions/
+│ │ ├── reducers/
+│ │ └── store.js
+│ ├── utils/
+│ │ ├── inputChecks.js
+│ │ ├── data/
+│ │ └── helpers.js
+│ ├── App.js
+│ ├── index.js
+│ └── index.css
 ├── .gitignore
 ├── package.json
 ├── README.md
 └── yarn.lock
 
 
-
 ---
 
+## 📌 Notes
+
+- Resume data is stored locally (localStorage).
+- Uses `jsPDF` for exporting resumes to PDF.
+- Fully responsive design with Material UI components.
+
+---
 
 ## 🙌 Contributing
 
@@ -142,9 +113,11 @@ Feel free to fork the repository and raise a pull request. Contributions are wel
 
 ## 📬 Contact
 
-For any inquiries or feedback, please reach out via [GitHub](https://github.com/mky120799) or raise an issue.
+For any inquiries or feedback, please reach out via [GitHub](https://github.com/your-username) or raise an issue.
 
 ---
 
 © 2025 Resume Builder. All rights reserved.
+Let me know if you'd like to personalize it with author info, a license section, or badges (like GitHub stars, build status, etc.).
+
 
