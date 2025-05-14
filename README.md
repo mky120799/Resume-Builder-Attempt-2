@@ -32,75 +32,47 @@ A modern and responsive web application that helps users easily create professio
 
 ---
 
-## 📁 Folder Structure
-
-|-- src
-| |-- assets
-| |-- components
-| | |-- AppNavBar
-| | | |-- Navbar.jsx
-| | | |-- NavbarDesktop.jsx
-| | | |-- NavbarMobile.jsx
-| | | |-- NavbarMobileDrawer.jsx
-| | |-- input
-| | | |-- Address.jsx
-| | | |-- Bio.jsx
-| | | |-- Education.jsx
-| | | |-- Experience.jsx
-| | | |-- KeySkills.jsx
-| | | |-- Projects.jsx
-| | | |-- UploadImage.jsx
-| | |-- preview
-| | | |-- Address.jsx
-| | | |-- Bio.jsx
-| | | |-- Education.jsx
-| | | |-- Experience.jsx
-| | | |-- KeySkills.jsx
-| | | |-- Projects.jsx
-| | | |-- ViewPreview.jsx
-| | |-- FillDetailButton.jsx
-| | |-- FillDetailSideBar.jsx
-| | |-- Footer.jsx
-| | |-- SuccessSnackbar.jsx
-| |-- data
-| | |-- aboutData.js
-| | |-- details.js
-| | |-- social.js
-| | |-- templates.js
-| |-- pages
-| | |-- About.jsx
-| | |-- FillDetails.jsx
-| | |-- Home.jsx
-| | |-- MyResume.jsx
-| |-- redux
-| | |-- slices
-| | | |-- addressSlice.js
-| | | |-- bioSlice.js
-| | | |-- educationSlice.js
-| | | |-- experienceSlice.js
-| | | |-- keySkillsSlice.js
-| | | |-- projectsSlice.js
-| | | |-- sliceDynamicStyle.js
-| | | |-- sliceFillDetails.js
-| | |-- store.js
-| |-- styles
-| | |-- footer.module.css
-| | |-- home.module.css
-| | |-- input.module.css
-| | |-- navbar.module.css
-| |-- utils
-| | |-- colors.js
-| | |-- controls.js
-| |-- App.jsx
-| |-- main.jsx
-|-- index.css
-|-- index.html
-|-- package.json
-|-- package-lock.json
-
-
----
-
+Project_Name/
+│
+├── README.md                # Project overview and documentation
+├── requirements.txt         # List of dependencies
+├── .gitignore               # Git ignore file
+├── setup.py                 # Setup script for the project (if applicable)
+│
+├── data/                    # Directory for datasets
+│   ├── raw/                 # Raw, unprocessed data
+│   ├── processed/           # Processed/cleaned data
+│   └── external/            # External datasets or references
+│
+├── src/                     # Source code for the project
+│   ├── __init__.py          # Makes src a Python package
+│   ├── main.py              # Main script or entry point
+│   ├── utils/               # Utility functions or modules
+│   │   ├── __init__.py
+│   │   └── helpers.py
+│   └── modules/             # Core modules or components
+│       ├── __init__.py
+│       └── module1.py
+│
+├── notebooks/               # Jupyter notebooks for analysis or prototyping
+│   ├── exploration.ipynb    # Data exploration notebook
+│   └── experiments.ipynb    # Experimentation notebook
+│
+├── tests/                   # Unit and integration tests
+│   ├── __init__.py
+│   └── test_main.py         # Example test file
+│
+├── docs/                    # Documentation for the project
+│   ├── index.md             # Main documentation file
+│   └── api_reference.md     # API reference documentation
+│
+├── logs/                    # Logs generated during execution
+│   └── app.log              # Example log file
+│
+└── outputs/                 # Generated outputs (e.g., models, reports)
+    ├── models/              # Saved models
+    ├── reports/             # Generated reports
+    └── figures/             # Visualizations or plots
 ## 📷 Page Previews
 
 ### 🏠 Home Page
