@@ -43,111 +43,91 @@
 <img width="1119" alt="image" src="https://user-images.githubusercontent.com/100461901/219925057-16f85fe1-6aa1-416f-9d88-6040e04faae0.png">
 
 *__Live Link__* <br/>
-<b>Click [Here](https://resume-builder-56.netlify.app/)</b>
+<b>Click [Here](https://resume-builder-attempt-2.vercel.app/)</b>
 
 </hr>
 
 Resume-Builder/
 ├── public/
-│   ├── apple-icon.png
 │   ├── favicon.ico
 │   ├── index.html
-│   ├── logo192.png
-│   ├── logo512.png
 │   ├── manifest.json
 │   └── robots.txt
 │
-└── src/
-    ├── App.js
-    ├── index.css
-    ├── index.js
-    ├── Store.js
-    │
-    ├── Components/
-    │   ├── CheckSelectedId.js
-    │   ├── BackNextBtn/
-    │   │   ├── BackNextBtnComponent.js
-    │   │   └── BackNextBtnComponent.css
-    │   ├── BlackScreen/
-    │   │   ├── BlackScreen.js
-    │   │   └── BlackScreen.css
-    │   ├── DetailFillingSidebar/
-    │   │   ├── DetailFillingSidebar.js
-    │   │   └── DetailsFillingSideBar.css
-    │   ├── Education/
-    │   │   ├── EducationComponent.js
-    │   │   └── EducationComponent.css
-    │   ├── Header/
-    │   │   ├── TemplateHeader.js
-    │   │   └── TemplateHeader.css
-    │   ├── Heading/
-    │   │   ├── TemplateHeading.js
-    │   │   └── TemplateHeading.css
-    │   ├── Input/
-    │   │   ├── InputComponent.js
-    │   │   └── InputComponent.css
-    │   ├── KeySkills/
-    │   │   ├── KeySkillsComponent.js
-    │   │   └── KeySkillsComponent.css
-    │   ├── MainBar/
-    │   │   ├── Navbar.js
-    │   │   └── Navbar.css
-    │   ├── PersonalInfo/
-    │   │   ├── PersonalInfoComponent.js
-    │   │   └── PersonalInfoComponent.css
-    │   ├── Preview/
-    │   │   ├── PreviewComponent.js
-    │   │   └── PreviewComponent.css
-    │   ├── Select/
-    │   │   ├── SelectComponent.js
-    │   │   └── SelectComponent.css
-    │   ├── TemplateEducation/
-    │   │   ├── TemplateEducationComponent.js
-    │   │   └── TemplateEducationComponent.css
-    │   ├── TemplateKeySkill/
-    │   │   ├── TemplateKeySkillComponent.js
-    │   │   └── TemplateKeySkillComponent.css
-    │   ├── TemplateOneExperience/
-    │   │   ├── TemplateOneExperienceComponent.js
-    │   │   └── TemplateOneExperienceComponent.css
-    │   └── WorkExperience/
-    │       ├── WorkExperienceComponent.js
-    │       └── WorkExperienceComponent.css
-    │
-    ├── Pages/
-    │   ├── AboutUs.js
-    │   ├── DetailsFilling.js
-    │   ├── Home.js
-    │   ├── MyResumes.js
-    │   ├── index.js
-    │   └── Styles/
-    │       ├── DetailsFilling.css
-    │       ├── Home.css
-    │       └── MyResumes.css
-    │
-    ├── Redux/
-    │   ├── Actions/
-    │   │   └── actions.js
-    │   └── Reducers/
-    │       ├── combinedReducers.js
-    │       └── reducers.js
-    │
-    └── Utils/
-        ├── inputChecks.js
-        ├── Data/
-        │   ├── data.js
-        │   └── templates.js
-        ├── Images/
-        │   ├── aboutCV.jpg
-        │   ├── sample_1.jpg
-        │   ├── sample_2.jpg
-        │   ├── sample_3.jpg
-        │   └── sample_4.jpg
-        └── Templates/
-            ├── Template.css
-            ├── Template1.js
-            ├── Template2.js
-            ├── Template3.js
-            ├── Template4.js
-            ├── Template5.js
-            └── Template6.js
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── aboutCV.jpg
+│   │   │   ├── sample_1.jpg
+│   │   │   ├── sample_2.jpg
+│   │   │   ├── sample_3.jpg
+│   │   │   └── sample_4.jpg
+│   │   └── styles/
+│   │       ├── global.css
+│   │       └── variables.css
+│   │
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Button/
+│   │   │   │   ├── Button.js
+│   │   │   │   └── Button.css
+│   │   │   ├── Navbar/
+│   │   │   │   ├── Navbar.js
+│   │   │   │   └── Navbar.css
+│   │   │   └── Footer/
+│   │   │       ├── Footer.js
+│   │   │       └── Footer.css
+│   │   │
+│   │   ├── forms/
+│   │   │   ├── PersonalInfoForm.js
+│   │   │   ├── EducationForm.js
+│   │   │   └── WorkExperienceForm.js
+│   │   │
+│   │   ├── templates/
+│   │   │   ├── Template1.js
+│   │   │   ├── Template2.js
+│   │   │   ├── Template3.js
+│   │   │   ├── Template4.js
+│   │   │   ├── Template5.js
+│   │   │   └── Template6.js
+│   │
+│   ├── pages/
+│   │   ├── Home/
+│   │   │   ├── Home.js
+│   │   │   └── Home.css
+│   │   ├── AboutUs/
+│   │   │   ├── AboutUs.js
+│   │   │   └── AboutUs.css
+│   │   ├── MyResumes/
+│   │   │   ├── MyResumes.js
+│   │   │   └── MyResumes.css
+│   │   └── DetailsFilling/
+│   │       ├── DetailsFilling.js
+│   │       └── DetailsFilling.css
+│   │
+│   ├── redux/
+│   │   ├── actions/
+│   │   │   └── actions.js
+│   │   ├── reducers/
+│   │   │   ├── combinedReducers.js
+│   │   │   └── reducers.js
+│   │   └── store.js
+│   │
+│   ├── utils/
+│   │   ├── inputChecks.js
+│   │   ├── data/
+│   │   │   ├── data.js
+│   │   │   └── templates.js
+│   │   └── helpers.js
+│   │
+│   ├── App.js
+│   ├── index.js
+│   └── index.css
+│
+├── .gitignore
+├── package.json
+├── README.md
+└── yarn.lock
+
+
+
