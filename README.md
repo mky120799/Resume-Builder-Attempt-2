@@ -131,3 +131,20 @@ Resume-Builder/
 
 
 
+---
+
+
+## 🙌 Contributing
+
+Feel free to fork the repository and raise a pull request. Contributions are welcome!
+
+---
+
+## 📬 Contact
+
+For any inquiries or feedback, please reach out via [GitHub](https://github.com/mky120799) or raise an issue.
+
+---
+
+© 2025 Resume Builder. All rights reserved.
+
