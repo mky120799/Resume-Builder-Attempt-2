@@ -1,4 +1,4 @@
-dpvasani/Resume-Builder
+Mithilesh/Resume-Builder
 ## Folder Structure
 
 The project directory is organized as follows:
